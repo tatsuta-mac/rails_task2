@@ -1,0 +1,15 @@
+<nav class="navbar Navbar">
+    <div class="container-fluid">
+        <%= link_to '/' do %>
+            <%= image_tag 'logo.png', class: "Navbar__logo", alt: "サイトロゴ" %>
+        <% end %>
+        <ul class="navbar-nav flex-row align-items-center">
+            <li class="nav-item NavItem">
+                <%= link_to "ログイン", "#", class: "fw-bold NavItem__link NavItem__link--login" %>
+            </li>
+            <li class="nav-item NavItem">
+                <%= link_to "新規登録", "#", class: "btn fw-bold NavItem__link NavItem__link--register" %>
+            </li>
+        </ul>
+    </div>
+</nav>

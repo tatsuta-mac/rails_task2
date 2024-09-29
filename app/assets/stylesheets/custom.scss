@@ -1,0 +1,52 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: #0071c1;
+    text-decoration: none;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+li {
+    display: list-item;
+}
+
+.Navbar {
+    background-color: #1c1d3b;
+    height: 80px;
+}
+
+.Navbar__logo {
+    width: 221px;
+}
+
+.NavItem__link {
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.NavItem__link--login {
+    margin-right: 32px;
+}
+
+.NavItem__link--register {
+    background-color: #ff7757;
+    color: #fff;
+}

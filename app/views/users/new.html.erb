@@ -1,0 +1,30 @@
+<div class="AccountFormWrapper">
+    <section class="AccountFormContainer">
+        <h2 class="AccountFormContainer__title">新規登録</h2>
+        <%= form_with model: @user do |f| %>
+            <%= render 'shared/error_messages' %>
+            <div class="mb-3">
+                <%= f.label :name, class: "form-label Form__label--required" %>
+                <%= f.text_field :name, class: "form-control" %>
+            </div>
+
+            <div class="mb-3">
+                <%= f.label :email, class: "form-label Form__label--required" %>
+                <%= f.email_field :email, class: "form-control" %>
+            </div>
+
+            <div class="mb-3">
+                <%= f.label :password, class: "form-label Form__label--required" %>
+                <%= f.password_field :password, class: "form-control" %>
+            </div>
+
+            <div class="mb-3">
+                <%= f.label :password_confirmation, class: "form-label Form__label--required" %>
+                <%= f.password_field :password_confirmation, class: "form-control" %>
+            </div>
+
+            <%= f.submit "新しいアカウントを作成", class: "btn mb-3 AccountForm__button AccountForm__button--primary" %>
+            <%= link_to "アカウントをお持ちの方はログイン", "#", class: "btn AccountForm__button AccountForm__button--secondary" %>
+        <% end %>
+    </section>
+</div>

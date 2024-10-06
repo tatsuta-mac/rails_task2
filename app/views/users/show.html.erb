@@ -1,0 +1,32 @@
+<section class="container UserSection">
+    <h2>設定</h2>
+    <div class="UserContainer">
+        <ul class="SideNavigation">
+            <li class="SideNavigation__item">
+                <%= link_to "アカウント", users_account_path%>
+            </li>
+            <li class="SideNavigation__item active">
+                <%= link_to "プロフィール", users_profile_path%>
+            </li>
+        </ul>
+        <div class="AccoutnInformation">
+            <ul class="TabNavigation">
+                <li class="TabNavigation__item">
+                    <%= link_to "アカウント", users_account_path %>
+                </li>
+                <li class="TabNavigation__item active">
+                    <%= link_to "プロフィール", users_profile_path %>
+                </li>
+            </ul>
+            <div class="AccountInformation__header">
+                <h3>プロフィール</h3>
+                <%= link_to users_profile_edit_path do %>
+                    <%= image_tag 'edit_icon.svg', alt: "編集アイコン" %>編集
+                <% end %>
+            </div>
+            <div class="AccountInformation__input-group">
+                
+            </div>
+        </div>
+    </div>
+</section>

@@ -16,7 +16,12 @@ module BookingApp
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    # config.time_zone = "Central Time (US & Canada)"
+    config.time_zone = "Tokyo"
+    config.active_record.default_timezone = :local
+    # デフォルトのlocaleを日本語(ja)に変更
+    config.i18n.default_locale = :ja
+    #複数のlocaleファイルが読み込まれるよう、パスを通す
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
